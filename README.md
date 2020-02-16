@@ -89,10 +89,10 @@ If you have questions, please ask them on the [forum](https://discuss.erpnext.co
 - The log file is saved under `/tmp/logs/install_bench.log` in case you run into any issues during the install.
 - If you find any problems, post them on the forum: [https://discuss.erpnext.com](https://discuss.erpnext.com/c/bench) with the `installation_problem` under "Install / Update" category.
 
-		wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py
+		wget https://raw.githubusercontent.com/ebukoz/bench/master/playbooks/install.py
 		python3 install.py --production
 
-Follow [Easy Install Docs](https://github.com/frappe/bench/blob/master/docs/easy_install.md) for more information.
+Follow [Easy Install Docs](https://github.com/ebukoz/bench/blob/master/docs/easy_install.md) for more information.
 
 ---
 
