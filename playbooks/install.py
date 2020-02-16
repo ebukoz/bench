@@ -362,7 +362,7 @@ def parse_commandline_args():
 
 	args_group.add_argument('--develop', dest='develop', action='store_true', default=False, help='Install developer setup')
 	args_group.add_argument('--production', dest='production', action='store_true', default=False, help='Setup Production environment for bench')
-	parser.add_argument('--site', dest='site', action='store', default='site1.local', help='Specifiy name for your first ERPNext site')
+	parser.add_argument('--site', dest='site', action='store', default='thrive.local', help='Specifiy name for your first ERPNext site')
 	parser.add_argument('--without-site', dest='without_site', action='store_true', default=False)
 	parser.add_argument('--verbose', dest='verbose', action='store_true', default=False, help='Run the script in verbose mode')
 	parser.add_argument('--user', dest='user', help='Install frappe-bench for this user')
@@ -370,7 +370,7 @@ def parse_commandline_args():
 	parser.add_argument('--repo-url', dest='repo_url', help='Clone bench from the given url')
 	parser.add_argument('--frappe-repo-url', dest='frappe_repo_url', action='store', default='https://github.com/frappe/frappe', help='Clone frappe from the given url')
 	parser.add_argument('--frappe-branch', dest='frappe_branch', action='store', help='Clone a particular branch of frappe')
-	parser.add_argument('--erpnext-repo-url', dest='erpnext_repo_url', action='store', default='https://github.com/frappe/erpnext', help='Clone erpnext from the given url')
+	parser.add_argument('--erpnext-repo-url', dest='erpnext_repo_url', action='store', default='https://github.com/ebukoz/Thrive', help='Clone erpnext from the given url')
 	parser.add_argument('--erpnext-branch', dest='erpnext_branch', action='store', help='Clone a particular branch of erpnext')
 	parser.add_argument('--without-erpnext', dest='without_erpnext', action='store_true', default=False, help='Prevent fetching ERPNext')
 	# direct provision to install versions
@@ -413,4 +413,4 @@ if __name__ == '__main__':
 		install_prerequisites()
 		install_bench(args)
 
-	log("Bench + Frappe + ERPNext has been successfully installed!")
+	log("Bench + Frappe + Thrive has been successfully installed!")
